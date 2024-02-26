@@ -1,4 +1,4 @@
-**Proxy History API**
+**Request History API**
 
 *Um proxy em Golang que armazena o histórico de chamadas a APIs, evitando a repetição de requisições desnecessárias.*
 
