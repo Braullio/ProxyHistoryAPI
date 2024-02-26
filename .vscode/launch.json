@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Server (Auto)",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "trace": "verbose",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/cmd/server/main.go",
+            "env": {
+                "PORT": "8080"
+            },
+            "debugAdapter": "dlv-dap"
+        },
+        {
+            "name": "Attach to Running Server",
+            "type": "go",
+            "request": "attach",
+            "processId": "${input:pickProcess}",
+            "debugAdapter": "dlv-dap"
+        }
+    ]
+}
